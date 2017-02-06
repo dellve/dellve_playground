@@ -1,0 +1,11 @@
+{
+  "name": "DELLveProto",
+  "version": "0.0.1",
+  "description": "DELLveProto WebSocket-ZeroMQ bridge example",
+  "dependencies": {
+    "express": "^4.14.1",
+    "socket.io": "^1.7.2",
+    "zerorpc": "^0.9.7",
+    "zmq": "^2.15.3"
+  }
+}
