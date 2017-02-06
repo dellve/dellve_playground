@@ -17,9 +17,9 @@ Getting Starged
 3. Install Python packages:
 
 <code> 
-	virtualenv venv
-	. venv/bin/activate 
-	pip install -r requirements.txt
+	virtualenv venv;
+	. venv/bin/activate; 
+	pip install -r requirements.txt;
 </code>
 
 4. Start benchmark service:
