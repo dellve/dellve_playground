@@ -1,4 +1,4 @@
-var backendGRPC = require('./BackendGRPCService')
+var backendGRPC = require('./benchend-grpc')
 var progressBar = require('./ProgressBar');
 
 var backend = null;
@@ -21,12 +21,12 @@ CLI.prototype.stop = function () {
 	backend.stopStream();
 	console.log('\n Stream ended.');
 }
- 
+
 CLI.prototype.newData = function(metricData) {
     gpuBar.update(metricData.gpuUtil / 100);
     memBar.update(metricData.memUtil / 100);
 }
- 
+
 CLI.prototype.endData = function(metricData) {
     console.log('Okay, we got metric stream end!');
 }
